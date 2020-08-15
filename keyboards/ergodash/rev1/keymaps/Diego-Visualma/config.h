@@ -33,10 +33,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define EE_HANDS
 
 /*Testing RGB Lighting*/
-//#define RGBLIGHT_ANIMATIONS
-//#define RGBLIGHT_HUE_STEP 8
-//#define RGBLIGHT_SAT_STEP 10
-//#define RGBLIGHT_VAL_STEP 8
+#define RGBLIGHT_ANIMATIONS
+#define RGBLIGHT_HUE_STEP 8
+#define RGBLIGHT_SAT_STEP 10
+#define RGBLIGHT_VAL_STEP 8
 
 #undef TAPPING_TERM
 #define TAPPING_TERM 120

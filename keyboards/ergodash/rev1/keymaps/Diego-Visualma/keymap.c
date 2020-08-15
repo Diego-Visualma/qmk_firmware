@@ -180,6 +180,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if (record->event.pressed) {
          print("mode just switched to qwerty and this is a huge string\n");
         set_single_persistent_default_layer(_QWERTY);
+	rgblight_mode(RGBLIGHT_MODE_SNAKE);
       }
       return false;
       break;
@@ -214,7 +215,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case NUMPAD:
       if (record->event.pressed) {
           layer_invert(_NUMPAD);
-      }
+	  if( layer_state_is(_NUMPAD) ){
+		  rgblight_mode(RGBLIGHT_MODE_KNIGHT);
+	  }else{
+		  rgblight_mode(RGBLIGHT_MODE_STATIC_GRADIENT);
+	  }
+	}
     break;
     case ENIE:
       if (record->event.pressed) {
@@ -232,6 +238,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case COLEMK:
       if (record->event.pressed) {
         set_single_persistent_default_layer(_COLEMAKMD);
+	rgblight_mode(RGBLIGHT_MODE_STATIC_LIGHT);
       } 
     break;
   }
