@@ -27,7 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define USE_I2C
 
 /* Select hand configuration */
-
 #define MASTER_LEFT
 // #define MASTER_RIGHT
 // #define EE_HANDS
@@ -38,5 +37,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_SAT_STEP 10
 #define RGBLIGHT_VAL_STEP 8
 
+#define RGBLIGHT_LAYERS
+
 #undef TAPPING_TERM
 #define TAPPING_TERM 120
+
+//combos
+#define COMBO_COUNT 2
+#define COMBO_TERM 30
